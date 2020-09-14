@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.5;
-  font-family: "Patua One", sans-serif;
+  line-height: 1.5;
+  font-family: Georgia, sans-serif;
   background-color: #f2f1ed;
 }
 
@@ -20,6 +20,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
+  margin: 1rem;
 }
 
 header {
@@ -49,6 +50,8 @@ header nav {
   grid-column: 2;
   grid-row: 1;
   z-index: 100;
+  font-family: "Patua One", sans-serif;
+
 }
 
 header nav ul {
@@ -60,7 +63,7 @@ header nav ul {
   margin: 0;
 }
 
-header nav ul li a {
+header nav a {
   color: #fff;
 }
 
@@ -80,9 +83,9 @@ main figure {
 h2 {
   color: #30658d;
   margin-bottom: 0;
+  font-family: "Patua One", sans-serif;
 }
 
 p {
-  font-family: "Georgia", serif;
   margin-top: 0;
 }
