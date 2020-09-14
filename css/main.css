@@ -1,7 +1,8 @@
 html {
   box-sizing: border-box;
-  font: normal 100%/1.5 sans-serif;
-  font-family: "Patua One";
+  font: normal 100%/1.5;
+  font-family: "Patua One", sans-serif;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -14,12 +15,16 @@ img {
   width: 100%;
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .pano {
@@ -57,4 +62,27 @@ header nav ul {
 
 header nav ul li a {
   color: #fff;
+}
+
+main {
+  display: contents;
+}
+
+main figure:last-child {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+main figure {
+  margin: 0;
+}
+
+h2 {
+  color: #30658d;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Georgia", serif;
+  margin-top: 0;
 }
