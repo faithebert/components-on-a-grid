@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font: normal 100%/1.5 sans-serif;
+  font-family: "Patua One";
 }
 
 *,
@@ -29,8 +31,30 @@ h1 {
   grid-column: 1;
   grid-row: 2;
   z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
 
 h1 img {
+  width: 14rem;
+}
+
+header nav {
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 100;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
+  font-size: 2rem;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #fff;
 }
